@@ -1,0 +1,27 @@
+#
+# Copyright (c) 2006-2021 Wade Alcorn - wade@bindshell.net
+# Browser Exploitation Framework (BeEF) - http://beefproject.com
+# See the file 'doc/COPYING' for copying permission
+#
+beef:
+    extension:
+        evasion:
+            enable: false
+            name: 'Evasion'
+            authors: ["antisnatchor"]
+
+            # Exclude code JavaScript libraries
+            exclude_core_js: ["lib/jquery-1.12.4.min.js", "lib/json2.js", "lib/jools.min.js", "lib/mdetect.js"]
+
+            # Obfuscation methods are executed in the order in which they're provided here
+            # Available techniques: ["minify", "base_64", "whitespace"]
+            chain: ["minify", "base_64"]
+
+            # experimental (broken - do not use):
+            scramble_variables: false
+            scramble_cookies: false
+            scramble:
+              beef: "beef"
+              Beef: "Beef"
+              evercookie: "evercookie"
+              BeEF: "BeEF"

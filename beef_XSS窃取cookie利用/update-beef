@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Copyright (c) 2006-2021 Wade Alcorn - wade@bindshell.net
+# Browser Exploitation Framework (BeEF) - http://beefproject.com
+# See the file 'doc/COPYING' for copying permission
+#
+set -euo pipefail
+IFS=$'\n\t'
+
+info()  { echo -e "\\033[1;36m[INFO]\\033[0m  $*"; }
+
+info 'Updating BeEF from GitHub repository...'
+git pull
+
+info 'Updating dependencies...'
+if [ -f Gemfile.lock ]; then
+  rm Gemfile.lock
+fi
+bundle install

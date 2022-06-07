@@ -1,0 +1,10 @@
+http://127.0.0.1/sqli-labs/Less-21/?id=1
+http://127.0.0.1/sqli-labs/Less-23/?id=2
+http://127.0.0.1/sqli-labs/Less-34/?id=3
+http://127.0.0.1/sqli-labs/Less-24/?id=4
+http://127.0.0.1/sqli-labs/Less-52/?id=5
+http://127.0.0.1/sqli-labs/Less-16/?id=6
+http://127.0.0.1/sqli-labs/Less-47/?id=7
+http://127.0.0.1/sqli-labs/Less-38/?id=8
+http://127.0.0.1/sqli-labs/Less-9/?id=9
+http://127.0.0.1/sqli-labs/Less-18/?id=10

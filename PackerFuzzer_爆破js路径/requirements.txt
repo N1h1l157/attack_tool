@@ -1,0 +1,7 @@
+bs4
+urllib3
+requests
+docx2pdf
+docx2txt
+node_vm2
+python-docx

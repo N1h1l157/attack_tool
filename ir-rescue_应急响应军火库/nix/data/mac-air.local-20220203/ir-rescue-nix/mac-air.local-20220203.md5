@@ -1,0 +1,20 @@
+
+ir-rescue-nix-beta 20220203 22:42:57 (CST, UTC:z): "find -P . -type f -exec md5sum {} \;"
+
+e39e649fda185c09d4174539a197c20b  ./tools-nix/ascii/uncle-sam.txt
+e4dbce7eb1fdc41d4b6d69ffaf336711  ./tools-nix/ascii/uncle-saminv.txt
+eb40de3a6cb9c19904c8c0e9f0fe111a  ./tools-nix/ascii/uncle-sam.jpg
+8c58e53080d71af727f85a04f3992fcc  ./tools-nix/ascii/data.txt
+7ac576d4282de436cc860d861fd45cc4  ./tools-nix/ascii/cyb.txt
+d7f1f1aeff73a358b65658314a9b599c  ./tools-nix/cfg/recursive-md5sum.txt
+f89f3e6c7a898e0da5f2a181ba75f39f  ./tools-nix/cfg/ir-rescue-nix.conf
+08e9b1158bebcebd18095392787217f6  ./tools-nix/cfg/nonrecursive-hidden.txt
+be7884352db60b96b7682d7b964be77b  ./tools-nix/cfg/recursive-exec.txt
+9b8d6d7a3439bc6d562a09d783f8a13b  ./tools-nix/cfg/recursive.txt
+08e9b1158bebcebd18095392787217f6  ./tools-nix/cfg/nonrecursive.txt
+08e9b1158bebcebd18095392787217f6  ./tools-nix/cfg/nonrecursive-md5sum.txt
+0d5e9300b76d3f42b58b8b88d258eddf  ./tools-nix/cfg/recursive-hidden.txt
+3a14aa9f0b1b6cbfe489f23126b8b7e9  ./tools-nix/mem/avml-0.21
+add5647fbb3ebdc05f8e9beda4589543  ./ir-rescue-nix-v1.1.0.sh
+761de8081f339d4e516841679b42c3da  ./data/mac-air.local-20220203/ir-rescue-nix/mac-air.local-20220203.md5
+52592a3730ca12807edf081fd71a6d2e  ./data/mac-air.local-20220203/ir-rescue-nix/ir-rescue-nix.log

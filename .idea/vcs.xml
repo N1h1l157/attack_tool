@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/cobaltstrike_后渗透攻击/cs_可扩展脚本/Erebus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cobaltstrike_后渗透攻击/cs_可扩展脚本/taowu-cobalt-strike" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dirmap_网站目录爆破" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/exploitdb_本地搜索EXP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fuzz_模糊测试大法/fuzzDicts_fuzz6.4k爆破字典" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/githubcve_资源监控" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java_serial_序列化漏洞/ysoserial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/linux应急响应/GScan_linux自查漏洞" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/proxypool_代理池技术" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sha256_密钥生成" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/somepdf_相关工具资料/python漏洞知识" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sqlmap_SQL注入工具" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tplmap_SSTI模板注入" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vulmap_web漏洞扫描" vcs="Git" />
+  </component>
+</project>

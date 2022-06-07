@@ -1,0 +1,16 @@
+#
+# Copyright (c) 2006-2021 Wade Alcorn - wade@bindshell.net
+# Browser Exploitation Framework (BeEF) - http://beefproject.com
+# See the file 'doc/COPYING' for copying permission
+#
+beef:
+    module:
+        fake_lastpass:
+            enable: true
+            category: "Social Engineering"
+            name: "Fake LastPass"
+            description: "Displays a fake LastPass user dialog."
+            authors: ["xntrik", "gcattani"]
+            target:
+                user_notify: ['C']
+                not_working: ["ALL"]

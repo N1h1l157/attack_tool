@@ -1,0 +1,243 @@
+
+/Users/chentuo/Public/tool/ir-rescue-master/nix/ir-rescue-nix-v1.1.0.sh
+
+ir-rescue-nix-beta 20220203 22:42:57 (CST, UTC:z): "cat tools-nix/cfg/ir-rescue-nix.conf"
+
+# ir-rescue-nix configuration file
+# accepted values: 'true' or 'false' (exclusive)
+
+# general
+killself=false
+	# use "shred" in preference to standard Linux delete commands
+	# "shred" is not effective in all filesystems
+shred=true
+	# compress all data collected into a *.zip archive
+	# "zip"
+zip=true
+	# set a password for the resulting *.zip archive
+	# leave empty to turn off encryption
+zpassword=infected
+	# randomize ASCII art selection to be printed upon completion
+	# "./tools-nix/ascii/*.txt"
+	# default: "./tools-nix/ascii/cyb.txt"
+ascii=true
+
+# modules
+	# collect memory data
+memory=false
+	# collect log files and application data
+log=false
+	# collect system data
+system=false
+	# collect network data
+network=false
+	# collect filesystem data
+filesystem=false
+	# collect malware data
+malware=false
+	# collect user activity data
+activity=false
+	# collect web data
+web=true
+
+# memory
+memory-all=true
+	# dump the RAM to LiME format
+	# AVML "avml-v0.21" (64-bit ELF)
+memory-dump=true
+
+# log
+log-all=true
+	# collect hidden profile logs
+	# "cat"; "~/.*", "~/.ssh/(authorized_keys|known_hosts)"
+log-profile=true
+	# collect "/var/log/" files
+	# "cp"; "/var/log/"
+log-var=true
+        # collect journal log
+        # journalctl > journal.txt
+        # journalctl -o export > journal-exp.txt
+log-journal=true
+
+# system
+system-all=true
+	# get information about the distribution
+	# "hostname", "uname", "lsb_release"
+	# "/etc/*(-release|_version)", "/etc/issue", "/proc/*(release|version)*"
+system-distribution=true
+	# collect system (software and hardware) information
+	# "uptime", "free", "lspci", "lsusb", "lshw"
+	# "/proc/(cpuinfo|meminfo)"
+system-info=true
+	# collect user account and login data; unusual UIDs (0, >500)
+	# "who", "whoami", "last", "getent"
+	# "/var/log/wtmp", "/etc/(passwd|shadow)"
+system-account=true
+	# collect "iptables" information
+	# "iptables-save"
+system-security=true
+
+# network
+network-all=true
+	# collect network information; interfaces in promiscuous mode (sniffer)
+	# "ifconfig", "ip", "netstat", "lsof", "ss", "route"
+	# "/etc/network/interfaces", "/etc/hosts", "/etc/hosts.(allow|deny)"
+network-info=true
+
+# filesystem
+filesystem-all=false
+	# collect disk and filesystem information
+	# "lsblk", "fdisk", "df", "du", "mount", "findmnt"
+	# "/boot/grub/grub.cfg"
+filesystem-info=false
+	# get full file and directory listing sorted alphabetically
+	# "find", "stat"
+	# "./tools-nix/cfg/[non]recursive.txt"
+filesystem-stat=true
+	# compute MD5 values with file size and GMT timestamps (metadata change, C)
+	# "./tools-nix/cfg/[non]recursive-md5sum.txt"
+	# "md5sum"
+filesystem-md5sum=false
+
+# malware
+malware-all=false
+	# list running processes in plain and tree forms and list open files
+	# "ps", "pstree", "top", "lsof"
+malware-processes=false
+	# get kernel configurations and list loaded kernel modules
+	# "/sbin/sysctl", "lsmod"
+malware-kernel=false
+	# list services
+	# "service"
+malware-services=false
+	# list scheduled tasks for all users
+	# "crontab"
+malware-tasks=false
+	# list installed packages
+	# "rpm", "dpkg"
+malware-packages=false
+	# get full filesystem data of executables and scripts as tested by "file"
+	# "find", "file", "stat"
+	# "(ELF|executable|PE32|shared object|script)"
+	# "./tools-nix/cfg/recursive-exec.txt"
+malware-executables=true
+	# get full filesystem data of hidden files and directories
+	# includes files named with whitespaces and orphaned files (without owner)
+	# "find", "stat"
+	# "./tools-nix/cfg/[non]recursive-hidden.txt"
+malware-hidden=false
+	# list all files in "/dev" which are not of type "block" (b), "character" (c) or "directory" (d)
+	# spot regular files in "/dev" which are not supposed to be there
+	# "find"; "/dev"
+malware-dev=false
+	# list all files marked with the "setuid" (s), "setgid" (s) or "sticky" (t) bits
+	# "setuid" and "setgid" bits allow executables to run with the permissions of its owner or group, respectively
+	# the "sticky" bit allows directories to be changed only by their owners or by root
+	# "find"; "/"
+malware-bits=false
+
+# activity
+activity-all=true
+	# list command line history, environment variables and profile scripts
+	# "history"
+	# "$HISTFILE", ".profile", ".bashrc", ".bash_logout", ".bash_history", ".history"
+	# "/etc/profile", "/etc/profile.d/*"
+activity-command-line=true
+	# collect command line environment data
+	# "shopt", "env", "locale"
+activity-environment=true
+
+# web
+web-all=true
+	# collect browser information
+	# "mozilla", "firefox"
+web-browers=true
+
+
+# advanced
+	# run a clamscan (if available)
+	# "./tools-nix/cfg/[non]recursive-clamscan.txt"
+clamscan=true
+	# update malware signatures before running clamscan
+	# can take several minutes to download the 100+ MB file
+clamscan-freshclam=true
+
+
+
+ mac-air.local mac-air chentuo
+chentuo
+chentuo chentuo
+
+ir-rescue-nix-beta 20220203 22:42:57 (CST, UTC:z)
+
+
+ir-rescue-nix-beta 20220203 22:42:57 (CST, UTC:z)
+
+ compressing data and cleaning up...
+
+ir-rescue-nix-beta 20220203 22:42:57 (CST, UTC:z): "rm -rf -- ./data/mac-air.local-20220203/mem/mem.lime"
+
+
+ir-rescue-nix-beta 20220203 22:42:57 (CST, UTC:z)
+
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMWWWWWWWWWWWWWWWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMWNNXXXNNNNNNNNNNNNNNNXXNWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMWNKOOOKXXNNNNNNNNNNNNNNX0OKNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMWKxxkkO0KXNNNNNNNNNNNNNXKOOKWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMWXkllxkO0XXNNNNNNNNNNNXKOO0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMWO::ok0KXNNNNNNNNNNNXK00KWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMWx:cxO0XX0OkxxddolcccllxWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMXl;lldolcc:k0c;;;,,,. ,WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMWo .;lcccldXWN00xc,,,olKWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMW0:';ccoxOXNWWW0c::;,.d0WWWK0O0NWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMKOo;:clc:xXK0KNO:;;,.l;:Odoc:dXWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMWWNNNNNOol.,::cckoc:;:ol:lc:;'.''''ck0XWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMW0dc;;;;::oo:ccll::c;;;'.........',llcdOXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMWKl;;;,''..............;:codxl;,,cddddkXWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMWNkc::;,..','dkxxOOOx:xxc;.'..cl:odoxXXWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMWXkl;lc:.:,.',..,,,cd'.':cl;;xx:ol:dO0WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMNOxocc;.;l';:odxo,oKklxxddkOkclxoO00WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMWX0odl:o;.lxkdOO0Kkd0KxOKOkkdo;;.  .oNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMWN00c;;c,.;ookO0KOdk0xcx0Odld;:.    .XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMXl;c:.. .,;dx00d'.;,;xOkdxO;kNo    'kNWWMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMWWKl,'     coxkO0OxoloO0xdkOxoK0.      .'cxxxkk0XWMWNWMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMWNOl,..       ..':k0kdoccllcod00ld;'x.      .;ooolllldkl:cxWMMMMMMMMMMMMMM
+MMMMMMMMMMNold,... .       .:;,:kOOxc,';oOk00x'...''.    .:oolcccllllc:;x0WMMMMMMMMMMMM
+MMMMMMMMMMx.,,'  . .         .:oddllodOKXXkl:.. ..,'       .llccccllloc',lNMMMMMMMMMMMM
+MMMMMMMMMW;.,;,.  .          ldxOkkoco0000k' .',',,'..     ,ll:;:lclOdc,.:'lNMMMMMMMMMM
+MMMMMMMMMMc  ..'..          :k,;cdxoxx;,cld;   .,,,...'...',,;,''.;:dcc' ;, :WMMMMMMMMM
+MMMMMMMMMWl .   ...        .oOx'',xOO0kx,,dd;oc,'.:xx''..,,'... ..;::::. ol..0MMMMMMMMM
+MMMMMMMMMo..               ddkko;:oxoc:;..oOOKWWNK0Ko'.  ....,' .;;;;:. .o: .xXMMMMMMMM
+MMMMMMMMM0  ..         ...'xoxkxdlokOkxl:oK00KWWWXKKx..,;,,;,;'.',,,',  :,  'c,WMMMMMMM
+MMMMMMMMMWo .','...    .';ol::OK0Oxolcc,lxdOO0NWWWXKO..,;,,',,'.''''.  ;.  ;: 'WMMMMMMM
+MMMMMMMMNd;',;;;,,,,  .lOoxc'':ddlclcc;:OkdkOKNNWWWX0 .';,,;;,';'',. .;. 'kc  o0MMMMMMM
+MMMMMMMMO  ....,;',,;c0Kkcxo,'''cd;... '0O:okOKXNWWXx .';;;;,'',,:;  .. :X: ,KoxMMMMMMM
+MMMMMMMMWo  ...'..;,;kKK0:ko;,,','... .,0XOOXNK00KXNc .,;;;;,''':c,  ..;c..:X0dkMMMMMMM
+MMMMMMMMWd......,:;.lXXKKkodo:;':d,    ,OKNWWKNWNXOk: .,,,;c,''.lc.  .c:,;oXNxd0WMMMMMM
+MMMMMMMMO. .....'c'.dNN0OK0ddc:;kxo.   ,OOXNWWXKXNKkc .,,,,;,,'.lc.  .okkxNXdlxWMMMMMMM
+MMMMMMMWd  ....,lc. lXNX0OKO,dOKkl;  . '00OXNNNWX0XKd .,,,,,,,.,occ.  ,KXNWXkKWMMMMMMMM
+MMMMMMMWx..,:;cl;...'OKNN0KxdKo.       .d0ONXNWWWKK00  .',,,,' :l:l;  .0XWMMMMMMMMMMMMM
+MMMMMMMNd',;,;:'....':k0KK0O0o.         .lcdKWWWNK00O. .,,,,,..lldd:cx;kXWMMMMMMMMMMMMM
+MMMMMMMWc'.'..... ... .:c,okdc.    ..    .xxcOWWN00K0.  ,,,'' ;loK0kNNdkXWMMMMMMMMMMMMM
+MMMMMMMM0, .....'.        'll.     ..     oXXKK0k0ONXl  ';,,..clkWMMMMWNMMMMMMMMMMMMMMM
+MMMMMMMMWx  .....                   ..    ;000kxOOXWNK,  ,,, 'olKMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMN' ...  .        ..              ,NKOkk0KNWNWk, .'; oWNWMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMWx                                .ldoc:dNNWWWd. .c.:WMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMWO:'','                         .;;,cdONNWMMMNc...;:XWMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMWWX:'.''..                 .ddk0KXNWMMMMWK0XkNWKNMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMWWWWNd..             .  .KNNWNNWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMWo.             ,, cd0WWMWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMWXd'  ;x;.       .:.'XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMWN0ccdOOO00Ox..'l;l'OWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMWWWWWWWN:.cXKXOOWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXxkNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+                        ALL YOUR DATA ARE BELONG TO US                                 
+
+  finishing...
+
+ir-rescue-nix-beta 20220203 22:42:57 (CST, UTC:z): "rm -rf -- /tmp/ir-rescue-nix"
+

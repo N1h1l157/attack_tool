@@ -1,0 +1,12 @@
+
+服务器端执行：
+
+nohup ./teamserver 1.2.3.4 password &
+
+客户端执行：
+
+java -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -Xms512M -Xmx1024M -jar cobaltstrike.jar
+
+或者windows直接点击start.bat即可启动
+
+Github:https://github.com/TheKingOfDuck

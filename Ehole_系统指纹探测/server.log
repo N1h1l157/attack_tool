@@ -1,0 +1,30 @@
+2022/03/26 16:54:32 httprequest.go:63: 访问失败： Get "https://my.sdju.edu.cn": dial tcp: lookup my.sdju.edu.cn: no such host
+2022/03/26 16:54:32 httprequest.go:63: 访问失败： Get "http://ns3.sdju.edu.cn": dial tcp <nil>->172.20.10.8:80: connect: connection refused
+2022/03/26 16:54:32 httprequest.go:63: 访问失败： Get "http://my.sdju.edu.cn": dial tcp: lookup my.sdju.edu.cn: no such host
+2022/03/26 16:54:34 httprequest.go:63: 访问失败： Get "http://ns1.sdju.edu.cn": dial tcp <nil>->172.20.68.5:80: connect: connection refused
+2022/03/26 16:54:35 httprequest.go:63: 访问失败： Get "https://xiaobao.sdju.edu.cn": dial tcp <nil>->172.20.8.40:443: connect: connection refused
+2022/03/26 16:54:36 httprequest.go:63: 访问失败： Get "http://xtbg.sdju.edu.cn": dial tcp: lookup xtbg.sdju.edu.cn: no such host
+2022/03/26 16:54:36 httprequest.go:63: 访问失败： Get "https://xtbg.sdju.edu.cn": dial tcp: lookup xtbg.sdju.edu.cn: no such host
+2022/03/26 16:54:43 faviconhash.go:61: favicon client error: Get "https://authserver.sdju.edu.cn/favicon.ico": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "http://energyinfo.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "https://energyinfo.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "https://kczx.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "https://imap.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "http://imap.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "https://oa.sdju.edu.cn/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "https://pop.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "http://kczx.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "https://pop3.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "http://pop.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "http://pop3.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "https://ehall.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:47 httprequest.go:63: 访问失败： Get "https://smtp.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:48 httprequest.go:63: 访问失败： Get "http://smtp.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:49 httprequest.go:63: 访问失败： Get "http://visitor.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:50 httprequest.go:63: 访问失败： Get "https://authserver.sdju.edu.cn/authserver/login?service=https%3A%2F%2Fwsgl.sdju.edu.cn%2F": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:50 httprequest.go:63: 访问失败： Get "http://wxdev.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:50 httprequest.go:63: 访问失败： Get "https://wxdev.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:50 httprequest.go:63: 访问失败： Get "http://wxpj.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:50 httprequest.go:63: 访问失败： Get "https://wxpj.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:51 httprequest.go:63: 访问失败： Get "https://zssearch.sdju.edu.cn": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022/03/26 16:54:51 httprequest.go:63: 访问失败： Get "https://zssearch.sdju.edu.cn/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
